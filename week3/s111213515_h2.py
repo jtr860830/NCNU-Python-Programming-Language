@@ -1,3 +1,5 @@
+import sys
+
 input_from_user: str = input("input a number from 1 to 9: ")
 num: int = int(input_from_user)
 
@@ -6,6 +8,7 @@ try:
         raise ValueError
 except ValueError:
     print("Invalid input.")
+    sys.exit(1)
 
 line_num: int = num * 2 - 1
 for i in range(line_num, 0, -1):

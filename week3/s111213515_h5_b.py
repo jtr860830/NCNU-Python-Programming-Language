@@ -1,5 +1,3 @@
-from functools import reduce
-
 input_from_user: str = input("input an integer: ")
 num = int(input_from_user)
 
