@@ -19,7 +19,7 @@ for i in range(2, n * n + 1):
     tmp_row = row - 1 if row != 0 else row + n - 1
     tmp_col = col - 1 if col != 0 else col + n - 1
     if sqaure_matirx[tmp_row][tmp_col] != 0:
-        tmp_row = row + 1 if row != 4 else 0
+        tmp_row = row + 1 if row != n - 1 else 0
         tmp_col = col
     col = tmp_col
     row = tmp_row
