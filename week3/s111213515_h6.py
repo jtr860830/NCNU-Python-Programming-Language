@@ -1,4 +1,3 @@
-import math
 import sys
 
 input_from_user: str = input("input a number: ")
@@ -12,7 +11,7 @@ except ValueError:
     sys.exit(1)
 
 sqaure_matirx: list[list[int]] = [[0 for _ in range(n)] for _ in range(n)]
-row, col = (0, math.ceil(n / 2) - 1)
+row, col = (0, int(n / 2))
 sqaure_matirx[row][col] = 1
 
 for i in range(2, n * n + 1):
